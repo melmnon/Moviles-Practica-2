@@ -15,7 +15,7 @@ class _SudokuScreenState extends State<SudokuScreen> {
   //tablero inicial de la partida actual (para poder reiniciar sin cambiar de tablero)
   late List<List<int>> _initialBoard;
 
-  // Copia editable del tablero para jugar
+  //copia editable del tablero para poder jugar
   late List<List<int>> _board;
 
   //marca las casillas que vienen de inicio y no se pueden editar
@@ -219,7 +219,7 @@ class _SudokuScreenState extends State<SudokuScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              // Selector de dificultad (Normal / Difícil)
+              //seleccionar de dificultad
               SegmentedButton<PuzzleDifficulty>(
                 segments: const [
                   ButtonSegment(
